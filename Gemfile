@@ -9,6 +9,9 @@ gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 4.0'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'jquery-rails'
+gem 'bootstrap', '~> 4.5.0'
+gem 'twitter-bootstrap-rails'
+gem 'sprockets-rails', '3.2.1'
 
 group :development, :test do
 	gem 'sqlite3', '~> 1.4'
