@@ -14,6 +14,10 @@ gem 'twitter-bootstrap-rails'
 gem 'sprockets-rails', '3.2.1'
 gem 'devise'
 
+group :production do
+	gem 'pg'
+end
+
 group :development, :test do
 	gem 'sqlite3', '~> 1.4'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
