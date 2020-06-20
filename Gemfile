@@ -12,6 +12,7 @@ gem 'jquery-rails'
 gem 'bootstrap', '~> 4.5.0'
 gem 'twitter-bootstrap-rails'
 gem 'sprockets-rails', '3.2.1'
+gem 'devise'
 
 group :development, :test do
 	gem 'sqlite3', '~> 1.4'
