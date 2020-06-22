@@ -1,0 +1,26 @@
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="ui-15">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-5 col-sm-6 ui-padd mr-auto">
+          <div class="ui-form">
+            <h2>Восстановить пароль?</h2>
+              <form>
+                <div class="ui-input">
+                  <div class="field">
+                    <%= f.label :email, fa_icon('envelope-o'), class: "ui-icon" %>
+                    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Введите Email', class: "form-control" %>
+                  </div>
+                </div>
+
+              <%= f.submit "Отправить письмо", class: "btn btn-red btn-lg btn-block" %>
+              <%= render "devise/shared/links" %>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

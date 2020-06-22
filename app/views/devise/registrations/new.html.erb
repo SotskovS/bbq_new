@@ -1,0 +1,37 @@
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+   <div class="ui-15">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-5 col-sm-6 ui-padd mr-auto">
+          <div class="ui-form">
+            <h2>Регистрация нового пользователя</h2>
+            <form>
+              <div class="ui-input">
+                 <div class="field">
+                  <%= f.label :email, fa_icon('envelope-o'), class: "ui-icon" %>
+                  <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Введите Email', class: "form-control" %>
+                </div>
+              </div>
+              <div class="ui-input">
+                <div class="field">
+                  <%= f.label :password, fa_icon('lock'), class: "ui-icon" %>
+                  <%= f.password_field :password, autocomplete: "new-password", placeholder: 'Введите пароль(не менее 6 знаков)', class: "form-control" %>
+                </div>
+              </div>
+              <div class="ui-input">
+                <div class="field">
+                  <%= f.label :password_confirmation, fa_icon('lock'), class: "ui-icon" %>
+                  <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: 'Повторите пароль', class: "form-control" %>
+                </div>
+              </div>
+              <%= f.submit "Зарегистрироваться", class: "btn btn-red btn-lg btn-block" %>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
