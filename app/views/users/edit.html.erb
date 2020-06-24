@@ -21,7 +21,7 @@
                   <%= f.text_field :email, placeholder: 'Введите Email', class: "form-control" %>
                 </div>
               </div>
-              <%= f.submit "Сохранить", class: "btn btn-red btn-lg btn-block" %> или <%= link_to 'вернуться', :back %>
+              <%= f.submit "Сохранить", class: "btn btn-red btn-lg btn-block" %> <%= link_to 'изменить пароль', edit_user_password_path(@user) %> или <%= link_to 'вернуться', :back %>
             </form>
           </div>
         </div>
