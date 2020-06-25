@@ -13,6 +13,8 @@ gem 'bootstrap', '~> 4.5.0'
 gem 'twitter-bootstrap-rails'
 gem 'sprockets-rails', '3.2.1'
 gem 'devise'
+gem 'devise-i18n'
+gem 'rails-i18n'
 
 group :production do
 	gem 'pg'
