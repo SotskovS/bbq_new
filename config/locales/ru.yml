@@ -21,11 +21,8 @@ ru:
       destroyed: 'Вы удалили мероприятие'
     users:
       updated: 'Вы обновили свой профиль'
-  views:
+  errors:
     one: '%{count} ошибка'
     few: '%{count} ошибки'
     many: '%{count} ошибок'
-  dog:
-    one: '%{count} собака'
-    few: '%{count} собаки'
-    many: '%{count} собак'
+  are_you_sure: 'Вы уверены?'
