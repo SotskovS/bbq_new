@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
 
   def create
     @new_comment = @event.comments.build(comment_params)
-    # @new_comment.user = current.user
+    @new_comment.user = current_user
 
     if @new_comment.save
       redirect_to @event, notice: I18n.t('controllers.comments.created')
@@ -22,7 +22,7 @@ class CommentsController < ApplicationController
       message = {alert: I18n.t('controllers.comments.error')}
     end
 
-    redirect_to @event, massage
+    redirect_to @event, message
   end
 
   private
