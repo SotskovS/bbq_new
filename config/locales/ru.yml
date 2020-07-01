@@ -14,6 +14,7 @@ ru:
         address: 'Место проведения'
         datetime: 'Дата и время'
         description: 'Описание'
+
   controllers:
     events:
       created: 'Вы создали новое мероприятие'
@@ -21,8 +22,26 @@ ru:
       destroyed: 'Вы удалили мероприятие'
     users:
       updated: 'Вы обновили свой профиль'
+    comments:
+      destroyed: 'Комментарий удален'
+      created: 'Выш комментарий добавлен'
+      error: 'Ошибка с комментарием'
+    subscription:
+      creates: 'Вы подписались на это событие'
+      destroyed: 'Участник отписан'
+      error: 'Подписка/отписка не сработала'
+
+  comments:
+    comment:
+      destroy_confirm: 'Удаляем комментарий? Уверены?'
+
+  subscriptions:
+    subscription:
+      destroy_confirm: 'Вы уверены?'
+
   errors:
     one: '%{count} ошибка'
     few: '%{count} ошибки'
     many: '%{count} ошибок'
+
   are_you_sure: 'Вы уверены?'
