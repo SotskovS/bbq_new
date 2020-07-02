@@ -25,6 +25,7 @@
                 class: 'btn btn-danger' %>
             </div>
           <% end %>
+
         </div>
       </div>
     </div>
@@ -56,12 +57,16 @@
           ) %>
         </div>
       </div>
-      <div class="event-subscriptionn-form">
-        <h4>Я пойду</h4>
-        <div>
-          <%= render partial: 'subscriptions/form', locals: {subscription: @new_subscription || @event.subscriptions.build } %>
+
+      <% if !current_user_can_edit?(@event) %>
+        <div class="event-subscription-form">
+          <h4>Я пойду</h4>
+          <div>
+            <%= render partial: 'subscriptions/form', locals: {subscription: @new_subscription || @event.subscriptions.build } %>
+          </div>
         </div>
-      </div>
+      <% end %>
+
     </div>
   </div>
 </div>
