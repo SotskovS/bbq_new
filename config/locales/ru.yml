@@ -44,5 +44,6 @@ ru:
     few: '%{count} ошибки'
     many: '%{count} ошибок'
     user_event: ' не может подписаться на свое событие'
+    user_email_exist: ' уже зарегистрирован'
 
   are_you_sure: 'Вы уверены?'
