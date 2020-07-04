@@ -1,8 +1,10 @@
 class Event < ApplicationRecord
   belongs_to :user
+
   has_many :comments
   has_many :subscriptions
   has_many :subscribes, through: :subscriptions, source: :user
+  has_many :photos
 
   validates :user, presence: true
 

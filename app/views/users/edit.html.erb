@@ -21,6 +21,15 @@
                   <%= f.text_field :email, placeholder: 'Введите Email', class: "form-control" %>
                 </div>
               </div>
+
+              <div class="ui-input">
+                <div class="field">
+                  <%= f.label :avatar %>
+                  <p><%= image_tag(@user.avatar.thumb.url) if @user.avatar? %></p>
+                  <%= f.file_field :avatar %>
+                </div>
+              </div>
+
               <%= f.submit "Сохранить", class: "btn btn-green btn-lg btn-block" %>
               <div class="ui-input">
                 <%= link_to 'редактировать аккаунт', edit_user_registration_path %> или <%= link_to 'вернуться', :back %>

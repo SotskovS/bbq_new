@@ -35,6 +35,15 @@
                   <%= f.password_field :current_password, autocomplete: "current-password", placeholder: 'Введите текущий пароль', class: "form-control" %>
                 </div>
               </div>
+
+              <div class="ui-input">
+                <div class="field">
+                  <%= f.label :avatar %>
+                  <p><%= image_tag(@user.avatar.thumb.urll) if @user.avatar? %></p>
+                  <%= f.file_field :avatar %>
+                </div>
+              </div>
+
                 <%= f.submit "Сохранить изменения", class: "btn btn-green btn-lg btn-block" %>
             </form>
             <div class="ui-input">
