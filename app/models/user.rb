@@ -20,6 +20,6 @@ class User < ActiveRecord::Base
   end
 
   def link_subscriptions
-    Subscriptions.where(user_id: nil, user_email: user.email).update_all(user_id: self.id)
+    Subscription.where(user_id: nil, user_email: self.email).update_all(user_id: self.id)
   end
 end
