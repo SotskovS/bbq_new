@@ -20,6 +20,8 @@ gem 'carrierwave'
 gem 'rmagick'
 gem 'fog-aws'
 
+gem 'letter_opener'
+
 group :production do
 	gem 'pg'
 end
