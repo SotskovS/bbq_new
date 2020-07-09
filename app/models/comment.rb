@@ -1,6 +1,6 @@
 class Comment < ApplicationRecord
   belongs_to :event
-  belongs_to :user
+  belongs_to :user, optional: true
 
   validates :event, presence: true
   validates :body, presence: true
@@ -9,7 +9,7 @@ class Comment < ApplicationRecord
 
   def user_name
   	if user.present?
-  		user.user_name
+  		user.name
   	else
   		super
   	end
