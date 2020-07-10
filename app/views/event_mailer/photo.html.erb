@@ -1,0 +1,13 @@
+<h1><%= t '.title' %></h1>
+<p><%= t '.name' %>: <strong><%= @name %></strong></p>
+<p><%= t '.email' %>: <strong><%= link_to @email, "mailto:#{@email}" %></strong></p>
+<hr/>
+
+<%= t '.event' %>
+<h3><%= @event.title %></h3>
+
+<%= t '.author_photo' %>
+<h4><%= @event.user.name %></h4>
+
+
+<%= link_to image_tag(@photo.photo.thumb.url), @photo.photo.url %>

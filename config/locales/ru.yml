@@ -70,6 +70,12 @@ ru:
       event: 'Событие'
       datetime: 'Состоится'
       owner: 'Организатор'
+    photo:
+      title: 'Новое фото'
+      name: 'Имя'
+      email: 'Email'
+      event: 'Событие'
+      author_photo: 'Автор фото'
 
   errors:
     one: '%{count} ошибка'
