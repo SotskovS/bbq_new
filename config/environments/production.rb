@@ -98,7 +98,7 @@ Rails.application.configure do
   ActionMailer::Base.smtp_settings = {
     :address        => 'smtp.gmail.com',
     :port           => '587',
-    :enable_starttls_auto => true
+    :enable_starttls_auto => true,
     :user_name      => 'mailer.svalgele@gmail.com',
     :password       => 'Fdsaff12F',
     :domain         => 'heroku.com',
