@@ -59,7 +59,9 @@
         <p><%= render partial: 'users/user', object: @event.user %></p>
       </div>
       <div class="event-subscriptions">
-        <h4>Пойдут:</h4>
+        <% if @event.subscriptions.except(@new_subscription).any? %>
+          <h4>Пойдут:</h4>
+        <% end %>
         <div>
           <%= render(
             partial: 'subscriptions/subscription',
