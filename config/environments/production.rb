@@ -96,12 +96,13 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
 
   ActionMailer::Base.smtp_settings = {
-    :port           => '2525',
-    :address        => 'smtp.mailtrap.io',
-    :user_name      => 'd00a5addc115e2',
-    :password       => '4cfbb578167168',
-    :domain         => 'heroku.com',
+    :address        => 'smtp.gmail.com',
+    :port           => '587',
     :enable_starttls_auto => true
+    :user_name      => 'mailer.svalgele@gmail.com',
+    :password       => 'Fdsaff12F',
+    :domain         => 'heroku.com',
+    :authentication => :plain
   }
 
 end
