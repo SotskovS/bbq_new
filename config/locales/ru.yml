@@ -76,6 +76,8 @@ ru:
       email: 'Email'
       event: 'Событие'
       author_photo: 'Автор фото'
+      datetime: 'Состоится'
+      owner: 'Организатор'
 
   errors:
     one: '%{count} ошибка'
