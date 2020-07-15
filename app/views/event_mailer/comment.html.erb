@@ -1,7 +1,12 @@
 <h1><%= t '.title' %></h1>
 <p><%= @comment.body %></p>
 <p><%= t '.author' %>: <strong><%= @comment.user_name %></strong></p>
-<p><%= t '.email' %>: <strong><%= mail_to @comment.user.email %></strong></p>
+
+<% if @comment.user.nil? %>
+	<p><%= t '.email' %>: <strong><%= 'Комментатор не зарегистрирован, email отсутствует'  %></strong></p>
+<% else %>
+	<p><%= t '.email' %>: <strong><%= mail_to @comment.user.email  %></strong></p>
+<% end %>
 
 <hr/>
 
@@ -13,3 +18,4 @@
 
 <%= t '.owner' %>
 <h4><%= @event.user.name %></h4>
+

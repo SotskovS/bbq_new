@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   	resources :subscriptions, only: [:create, :destroy]
   	resources :photos, only: [:create, :destroy]
 
+  	post :show, on: :member
   end
   resources :users, only: [:new, :show, :edit, :update]
 
