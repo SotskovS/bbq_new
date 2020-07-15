@@ -51,11 +51,15 @@ ru:
 
   comments:
     comment:
-      destroy_confirm: 'Удаляем комментарий? Уверены?'
+      destroy_confirm: 'Удаляем комментарий?'
 
   subscriptions:
     subscription:
-      destroy_confirm: 'Вы уверены?'
+      destroy_confirm: 'Удаляем участника?'
+
+  photos:
+    photo:
+      destroy_confirm: 'Удаляем фото?'
 
   event_mailer:
     comment:
@@ -89,3 +93,4 @@ ru:
     user_email_exist: ' уже зарегистрирован'
 
   are_you_sure: 'Вы уверены?'
+
