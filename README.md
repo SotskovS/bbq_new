@@ -1,4 +1,9 @@
-# README
+# Приложение для сбора друзей на мероприятия
+
+ruby '2.7.0'
+rails '6.0.3'
+
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
